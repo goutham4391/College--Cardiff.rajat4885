@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.cardiff.ac.uk	TRUE	/	FALSE	1999999999	SQ_SYSTEM_SESSION	7f351b8ca40670e9626be86940a5a678
+blogs.cardiff.ac.uk	TRUE	/	FALSE	1999999999	NSC_cmpht.dbsejgg.bd.vl-iuuqt-wt	ffffffff09f7fae945525d5f4f58455e445a4a423660
+

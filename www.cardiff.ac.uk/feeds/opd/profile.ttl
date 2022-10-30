@@ -1,0 +1,53 @@
+# This is an Organisation Profile Document
+# For documentation go to http://opd.data.ac.uk/
+# To test the OPD go to http://opd.data.ac.uk/checker
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oo: <http://purl.org/openorg/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix lyou: <http://purl.org/linkingyou/> .
+@prefix ospost: <http://data.ordnancesurvey.co.uk/ontology/postcode/> .
+@prefix spatialrelations: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+"profile.ttl" rdf:type oo:OrganizationProfileDocument ;
+              foaf:primaryTopic <http://www.cardiff.ac.uk/#org> .
+
+<http://www.cardiff.ac.uk/#org> rdf:type org:FormalOrganization ;
+                                skos:prefLabel "Cardiff University" ;
+                                rdfs:label "Cardiff University" ;
+                                foaf:logo <http://static.cf.ac.uk/cfui/1.6.0/img/logo.png> ;
+                                foaf:homepage <http://www.cardiff.ac.uk/> ;
+                                foaf:phone <tel:+442920874000> ;
+                                owl:sameAs <http://learning-provider.data.ac.uk/ukprn/10007814> ;
+                                foaf:based_near <http://data.ordnancesurvey.co.uk/id/postcodeunit/CF103AT> ;
+                                foaf:account <https://twitter.com/cardiffuni> , 
+                                             <https://www.facebook.com/cardiffuni> ;
+                                lyou:about <http://www.cardiff.ac.uk/about/> ;
+                                lyou:events <http://www.cardiff.ac.uk/events/> ;
+                                lyou:business <http://www.cardiff.ac.uk/business/> ;
+                                lyou:courses <http://www.cardiff.ac.uk/study/> ;
+                                lyou:news <http://www.cardiff.ac.uk/news/> .
+
+<https://twitter.com/cardiffuni> rdf:type foaf:OnlineAccount ;
+                             foaf:accountName "cardiffuni" ;
+                             foaf:accountServiceHomepage <https://twitter.com/> .
+
+<https://www.facebook.com/cardiffuni> rdf:type foaf:OnlineAccount ;
+                                  foaf:accountName "cardiffuni" ;
+                                  foaf:accountServiceHomepage <https://www.facebook.com/> .
+                                  
+<https://www.cardiff.ac.uk/__data/assets/file/0007/289609/2021-10-research-equipment.csv>
+        oo:organization <http://www.cardiff.ac.uk/#org> ;
+        oo:corrections <mailto:web@cardiff.ac.uk> ;
+        dcterms:subject <http://purl.org/openorg/theme/facilities> ;
+        dcterms:subject <http://purl.org/openorg/theme/equipment> ;
+        dcterms:conformsTo <http://equipment.data.ac.uk/uniquip> ;
+        dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> .
